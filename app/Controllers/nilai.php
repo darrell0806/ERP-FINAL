@@ -22,7 +22,7 @@ class nilai extends BaseController
             $data['a'] = $model->join8('nilai', 'siswa','blok','mapel','guru','rombel','kelas','jurusan',$on,$on2,$on3,$on4,$on5,$on6,$on7);
 			$data['title']='Data Nilai';
 			echo view('partial/header_datatable', $data);
-			echo view('partial/side_menu2');
+			echo view('partial/side_menu3');
 			echo view('partial/top_menu');
 			echo view('nilai/v_nilai',$data);
 			echo view('partial/footer_datatable');
@@ -38,7 +38,7 @@ class nilai extends BaseController
 			$data['a'] = $rombelDetails;
 			$data['title']='Rombel';
 			echo view('partial/header_datatable', $data);
-			echo view('partial/side_menu2');
+			echo view('partial/side_menu3');
 			echo view('partial/top_menu');
 			echo view('nilai/tambah_nilai',$data);
 			echo view('partial/footer_datatable');
@@ -57,7 +57,7 @@ class nilai extends BaseController
 			$data['g'] = $model->tampil('guru');
             $data['a'] = $model->getDataByFilter22($rombel);
 			echo view('partial/header_datatable', $data);
-			echo view('partial/side_menu2');
+			echo view('partial/side_menu3');
 			echo view('partial/top_menu');
             echo view('nilai', $data);
 			echo view('partial/footer_datatable');
@@ -128,7 +128,7 @@ public function edit_nilai($id)
 			$data['jojo']=$model->getWhere('nilai',$where);
 			
 			echo view('partial/header_datatable', $data);
-			echo view('partial/side_menu2');
+			echo view('partial/side_menu3');
 			echo view('partial/top_menu');
 			echo  view('nilai/edit_nilai',$data);
 			echo view('partial/footer_datatable');

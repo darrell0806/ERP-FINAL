@@ -13,7 +13,7 @@ class Ledger extends BaseController
 {
     public function index()
     {
-      if(session()->get('level')==1 ||  session()->get('level')==2){
+      if(session()->get('level')==1 ||  session()->get('level')==2 ||  session()->get('level')==3){
          $model=new M_model();
          $kui['a'] = $model->tampil('tahun');
          $kui['c'] = $model->tampil('blok');
@@ -22,7 +22,7 @@ class Ledger extends BaseController
          $kui['kunci']='la';
          $data['title'] = 'Data Ledger Blok';
          echo view('partial/header_datatable', $data);
-         echo view('partial/side_menu');
+         echo view('partial/side_menu3');
          echo view('partial/top_menu');
          echo view('filter_Ledger',$kui);
          echo view('partial/footer_datatable');

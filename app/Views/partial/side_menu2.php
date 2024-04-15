@@ -156,12 +156,7 @@ $logo = $builder->select('logo_website')
 
                    
 
-                    <li class="sidebar-item <?php if($uri->getSegment(1) == "nilai") {echo "active";}?>">
-                      <a href="<?= base_url('nilai') ?>" class='sidebar-link'>
-                        <i class="bi bi-123"></i>
-                        <span>Data Nilai</span>
-                      </a>
-                    </li>
+                  
 
                     <li class="sidebar-item <?php if($uri->getSegment(2) == "sekre") {echo "active";}?>">
                       <a href="<?= base_url('/User/sekre') ?>" class="sidebar-link">
@@ -300,12 +295,7 @@ $logo = $builder->select('logo_website')
 
                    
 
-                    <li class="sidebar-item <?php if($uri->getSegment(1) == "nilai") {echo "active";}?>">
-                      <a href="<?= base_url('nilai') ?>" class='sidebar-link'>
-                        <i class="bi bi-123"></i>
-                        <span>Data Nilai</span>
-                      </a>
-                    </li>
+                  
 
                     <li class="sidebar-item <?php if($uri->getSegment(2) == "sekre") {echo "active";}?>">
                       <a href="<?= base_url('/User/sekre') ?>" class="sidebar-link">

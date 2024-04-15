@@ -21,7 +21,7 @@ class l_nilai extends BaseController
          $kui['kunci']='lap';
          $data['title'] = 'Data Nilai Blok';
          echo view('partial/header_datatable', $data);
-         echo view('partial/side_menu');
+         echo view('partial/side_menu3');
          echo view('partial/top_menu');
          echo view('filter_nilai',$kui);
          echo view('partial/footer_datatable');

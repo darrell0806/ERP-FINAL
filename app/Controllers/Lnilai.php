@@ -12,7 +12,7 @@ class Lnilai extends BaseController
 {
     public function index()
     {
-      if(session()->get('level')==1 ||  session()->get('level')==2){
+      if(session()->get('level')==1 ||  session()->get('level')==2||  session()->get('level')==3){
          $model=new M_model();
          $kui['a'] = $model->tampil('tahun');
          $kui['c'] = $model->tampil('blok');
@@ -21,7 +21,7 @@ class Lnilai extends BaseController
          $kui['kunci']='lap';
          $data['title'] = 'Data Nilai Blok';
          echo view('partial/header_datatable', $data);
-         echo view('partial/side_menu');
+         echo view('partial/side_menu3');
          echo view('partial/top_menu');
          echo view('filter_nilai',$kui);
          echo view('partial/footer_datatable');
