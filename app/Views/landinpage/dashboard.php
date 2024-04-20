@@ -104,13 +104,13 @@
                                     <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                                     data-bs-toggle="modal" data-bs-target="#project-01">
                                     <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                                        <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                                        <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
                                         class="custom-block-image img-fluid" alt="">
                                         <br>
                                         <div class="d-flex">
                                             <div>
                                                 <h5 class="mb-2">Penilaian</h5>
-                                                <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                <p class="mb-0">Aplikasi Untuk Mengolah Nilai</p>
                                             </div>
                                         </div>
                                     </div>
@@ -141,13 +141,13 @@
                             <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                             data-bs-toggle="modal" data-bs-target="#project-02">
                             <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                                <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+                                <img src="images/topics/undraw_Redesign_feedback_re_jvm.jpg"
                                 class="custom-block-image img-fluid" alt="">
                                 <br>
                                 <div class="d-flex">
                                     <div>
                                         <h5 class="mb-2">Absensi</h5>
-                                        <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                        <p class="mb-0">Aplikasi Untuk Mengolah Absensi</p>
                                     </div>
                                 </div>
                             </div>
@@ -177,13 +177,13 @@
                         <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                         data-bs-toggle="modal" data-bs-target="#project-03">
                         <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                            <img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
+                            <img src="images/topics/colleagues-working-cozy-office-medium-shot.jpg"
                             class="custom-block-image img-fluid" alt="">
                             <br>
                             <div class="d-flex">
                                 <div>
                                     <h5 class="mb-2">Uang Kas</h5>
-                                    <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                    <p class="mb-0">Aplikasi Untuk Mengolah Uang Kas</p>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                     <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                     data-bs-toggle="modal" data-bs-target="#project-04">
                     <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                        <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                        <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
                         class="custom-block-image img-fluid" alt="">
                         <br>
                         <div class="d-flex">
@@ -257,13 +257,13 @@
                 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                 data-bs-toggle="modal" data-bs-target="#project-05">
                 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.jpg"
                     class="custom-block-image img-fluid" alt="">
                     <br>
                     <div class="d-flex">
                         <div>
                             <h5 class="mb-2">E-Voting</h5>
-                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                            <p class="mb-0">Aplikasi Untuk Mengolah E-Voting</p>
                         </div>
                     </div>
                 </div>
@@ -293,13 +293,13 @@
             <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
             data-bs-toggle="modal" data-bs-target="#project-06">
             <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                <img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
+                <img src="images/topics/colleagues-working-cozy-office-medium-shot2.jpg"
                 class="custom-block-image img-fluid" alt="">
                 <br>
                 <div class="d-flex">
                     <div>
                         <h5 class="mb-2">Data Master</h5>
-                        <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                        <p class="mb-0">Aplikasi Untuk Mengolah Data Master</p>
                     </div>
                 </div>
             </div>
@@ -337,7 +337,7 @@
         <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
         data-bs-toggle="modal" data-bs-target="#project-07">
         <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-            <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+            <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
             class="custom-block-image img-fluid" alt="">
             <br>
             <div class="d-flex">
@@ -373,7 +373,7 @@
     <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
     data-bs-toggle="modal" data-bs-target="#project-08">
     <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-        <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+        <img src="images/topics/undraw_Redesign_feedback_re_jvm0.jpg"
         class="custom-block-image img-fluid" alt="">
         <br>
         <div class="d-flex">
@@ -409,7 +409,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
 data-bs-toggle="modal" data-bs-target="#project-09">
 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
+    <img src="images/topics/colleagues-working-cozy-office-medium-shot.jpg"
     class="custom-block-image img-fluid" alt="">
     <br>
     <div class="d-flex">
@@ -543,13 +543,13 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                                     data-bs-toggle="modal" data-bs-target="#project-01">
                                     <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                                        <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                                        <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
                                         class="custom-block-image img-fluid" alt="">
                                         <br>
                                         <div class="d-flex">
                                             <div>
                                                 <h5 class="mb-2">E-Voting</h5>
-                                                <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                <p class="mb-0">Aplikasi Untuk Mengolah E-Voting</p>
                                             </div>
                                         </div>
                                     </div>
@@ -580,13 +580,13 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                     data-bs-toggle="modal" data-bs-target="#project-02">
                     <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                        <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+                        <img src="images/topics/undraw_Redesign_feedback_re_jvm.jpg"
                         class="custom-block-image img-fluid" alt="">
                         <br>
                         <div class="d-flex">
                             <div>
                                 <h5 class="mb-2">Absensi</h5>
-                                <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                <p class="mb-0">Aplikasi Untuk Mengolah Absensi</p>
                             </div>
                         </div>
                     </div>
@@ -616,13 +616,13 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                 data-bs-toggle="modal" data-bs-target="#project-03">
                 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
+                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.jpg"
                     class="custom-block-image img-fluid" alt="">
                     <br>
                     <div class="d-flex">
                         <div>
                             <h5 class="mb-2">Uang Kas</h5>
-                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                            <p class="mb-0">Aplikasi Untuk Mengolah Uang Kas</p>
                         </div>
                     </div>
                 </div>
@@ -655,7 +655,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
             data-bs-toggle="modal" data-bs-target="#project-04">
             <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
                 class="custom-block-image img-fluid" alt="">
                 <br>
                 <div class="d-flex">
@@ -702,7 +702,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
 data-bs-toggle="modal" data-bs-target="#project-07">
 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-    <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+    <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
     class="custom-block-image img-fluid" alt="">
     <br>
     <div class="d-flex">
@@ -738,7 +738,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
 data-bs-toggle="modal" data-bs-target="#project-08">
 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-<img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+<img src="images/topics/undraw_Redesign_feedback_re_jvm0.jpg"
 class="custom-block-image img-fluid" alt="">
 <br>
 <div class="d-flex">
@@ -774,7 +774,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
 data-bs-toggle="modal" data-bs-target="#project-09">
 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-<img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
+<img src="images/topics/colleagues-working-cozy-office-medium-shot.jpg"
 class="custom-block-image img-fluid" alt="">
 <br>
 <div class="d-flex">
@@ -907,13 +907,13 @@ AOS.init();
                             <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                             data-bs-toggle="modal" data-bs-target="#project-01">
                             <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                                <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                                <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
                                 class="custom-block-image img-fluid" alt="">
                                 <br>
                                 <div class="d-flex">
                                     <div>
                                         <h5 class="mb-2">Penilaian</h5>
-                                        <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                        <p class="mb-0">Aplikasi Untuk Mengolah Nilai</p>
                                     </div>
                                 </div>
                             </div>
@@ -944,13 +944,13 @@ AOS.init();
                     <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                     data-bs-toggle="modal" data-bs-target="#project-02">
                     <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                        <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+                        <img src="images/topics/undraw_Redesign_feedback_re_jvm.jpg"
                         class="custom-block-image img-fluid" alt="">
                         <br>
                         <div class="d-flex">
                             <div>
                                 <h5 class="mb-2">Absensi</h5>
-                                <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                <p class="mb-0">Aplikasi Untuk Mengolah Absensi</p>
                             </div>
                         </div>
                     </div>
@@ -980,13 +980,13 @@ AOS.init();
                 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                 data-bs-toggle="modal" data-bs-target="#project-03">
                 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
+                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.jpg"
                     class="custom-block-image img-fluid" alt="">
                     <br>
                     <div class="d-flex">
                         <div>
                             <h5 class="mb-2">Uang Kas</h5>
-                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                            <p class="mb-0">Aplikasi Untuk Mengolah Uang Kas</p>
                         </div>
                     </div>
                 </div>
@@ -1024,7 +1024,7 @@ AOS.init();
             <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
             data-bs-toggle="modal" data-bs-target="#project-04">
             <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
                 class="custom-block-image img-fluid" alt="">
                 <br>
                 <div class="d-flex">
@@ -1060,13 +1060,13 @@ AOS.init();
         <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
         data-bs-toggle="modal" data-bs-target="#project-05">
         <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-            <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+            <img src="images/topics/undraw_Redesign_feedback_re_jvm0.jpg"
             class="custom-block-image img-fluid" alt="">
             <br>
             <div class="d-flex">
                 <div>
                     <h5 class="mb-2">E-Voting</h5>
-                    <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                    <p class="mb-0">Aplikasi Untuk Mengolah E-Voting</p>
                 </div>
             </div>
         </div>
@@ -1105,7 +1105,7 @@ AOS.init();
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
 data-bs-toggle="modal" data-bs-target="#project-07">
 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-    <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+    <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
     class="custom-block-image img-fluid" alt="">
     <br>
     <div class="d-flex">
@@ -1141,7 +1141,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
 data-bs-toggle="modal" data-bs-target="#project-08">
 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-<img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+<img src="images/topics/undraw_Redesign_feedback_re_jvm0.jpg"
 class="custom-block-image img-fluid" alt="">
 <br>
 <div class="d-flex">
@@ -1177,7 +1177,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
 data-bs-toggle="modal" data-bs-target="#project-09">
 <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-<img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
+<img src="images/topics/colleagues-working-cozy-office-medium-shot.jpg"
 class="custom-block-image img-fluid" alt="">
 <br>
 <div class="d-flex">
