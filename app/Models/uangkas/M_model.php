@@ -104,6 +104,32 @@ public function joint($table1, $table2, $on, $userLevel, $userId){
 			AND ".$table.".status = '".$status."'
 		")->getResult();
 	}
+    public function filter3($table, $awal, $akhir, $status, $id_user)
+{
+    return $this->db->query("
+        SELECT *
+        FROM " . $table . "
+        INNER JOIN siswa ON " . $table . ".siswa = siswa.id_siswa
+        INNER JOIN rombel ON siswa.rombel = rombel.id_rombel
+        INNER JOIN guru ON guru.rombel = rombel.id_rombel
+        WHERE " . $table . ".tanggal BETWEEN '" . $awal . "' AND '" . $akhir . "'
+        AND " . $table . ".status = '" . $status . "'
+        AND guru.user = '" . $id_user . "'
+    ")->getResult();
+}
+public function filter4($table, $awal, $akhir, $status, $id_user)
+{
+    return $this->db->query("
+    SELECT *
+    FROM " . $table . "
+    INNER JOIN siswa ON " . $table . ".siswa = siswa.id_siswa
+    INNER JOIN rombel ON siswa.rombel = rombel.id_rombel
+    WHERE " . $table . ".tanggal BETWEEN '" . $awal . "' AND '" . $akhir . "'
+    AND " . $table . ".status = '" . $status . "'
+    AND siswa.rombel IN (SELECT rombel FROM siswa WHERE user = '" . $id_user . "')
+")->getResult();
+}
+
 	public function filterrr($table, $awal, $akhir)
 {
     return $this->db->query("
@@ -111,6 +137,29 @@ public function joint($table1, $table2, $on, $userLevel, $userId){
         FROM ".$table."
         INNER JOIN siswa ON ".$table.".siswa = siswa.id_siswa
         WHERE ".$table.".tanggal BETWEEN '".$awal."' AND '".$akhir."'
+    ")->getResult();
+}
+public function filteras($table, $awal, $akhir, $id_user)
+{
+    return $this->db->query("
+        SELECT *
+        FROM ".$table."
+        INNER JOIN siswa ON " . $table . ".siswa = siswa.id_siswa
+        INNER JOIN rombel ON siswa.rombel = rombel.id_rombel
+        WHERE ".$table.".tanggal BETWEEN '".$awal."' AND '".$akhir."'
+        AND siswa.rombel IN (SELECT rombel FROM siswa WHERE user = '" . $id_user . "')
+    ")->getResult();
+}
+public function filaa($table, $awal, $akhir, $id_user)
+{
+    return $this->db->query("
+        SELECT *
+        FROM ".$table."
+        INNER JOIN siswa ON " . $table . ".siswa = siswa.id_siswa
+        INNER JOIN rombel ON siswa.rombel = rombel.id_rombel
+        INNER JOIN guru ON guru.rombel = rombel.id_rombel
+        WHERE ".$table.".tanggal BETWEEN '".$awal."' AND '".$akhir."'
+        AND guru.user = '" . $id_user . "'
     ")->getResult();
 }
 	public function getPaymentDataBySiswaId($id_siswa)

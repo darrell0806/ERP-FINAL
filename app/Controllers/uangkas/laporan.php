@@ -111,7 +111,17 @@ class laporan extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Uang-Masuk";
-    $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -124,7 +134,17 @@ class laporan extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Uang-Keluar";
-    $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+	$id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -137,7 +157,17 @@ class laporan extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Uang-Denda";
-    $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -150,7 +180,17 @@ class laporan extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Uang-Kas";
-    $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+	$id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -163,7 +203,17 @@ class laporan extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Lunas";
-    $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -176,7 +226,17 @@ class laporan extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Belum-Lunas";
-    $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -188,8 +248,17 @@ class laporan extends BaseController
     $model = new M_model();
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
-    $kui['duar'] = $model->filterrr('pembayaran', $awal, $akhir);
-    echo view('uangkas/laporan_semua', $kui);
+	$id_user = session()->get('id');
+	$level = session()->get('level');
+
+	if ($level == 3) {
+		$kui['duar'] = $model->filaa('pembayaran', $awal, $akhir, $id_user);
+	} elseif ($level == 6) {
+		$kui['duar'] = $model->filteras('pembayaran', $awal, $akhir, $id_user);
+	} else {
+		$kui['duar'] = $model->filterrr('pembayaran', $awal, $akhir);
+	}
+	echo view('uangkas/laporan_semua', $kui);
 }else{
 	return redirect()->to('/Home');
 }
@@ -201,10 +270,20 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Masuk";
-		$kui['duar']=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
+	
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
-		$dompdf->setPaper('A6','landscape');
+		$dompdf->setPaper('A4','landscape');
 		$dompdf->render();
 		$dompdf->stream('my.pdf', array('Attachment'=>0));
 	}else{
@@ -218,10 +297,20 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Keluar";
-		$kui['duar']=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
+	
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
-		$dompdf->setPaper('A6','landscape');
+		$dompdf->setPaper('A4','landscape');
 		$dompdf->render();
 		$dompdf->stream('my.pdf', array('Attachment'=>0));
 	}else{
@@ -235,10 +324,19 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Denda";
-		$kui['duar']=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
-		$dompdf->setPaper('A6','landscape');
+		$dompdf->setPaper('A4','landscape');
 		$dompdf->render();
 		$dompdf->stream('my.pdf', array('Attachment'=>0));
 	}else{
@@ -252,10 +350,19 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Kas";
-		$kui['duar']=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
-		$dompdf->setPaper('A6','landscape');
+		$dompdf->setPaper('A4','landscape');
 		$dompdf->render();
 		$dompdf->stream('my.pdf', array('Attachment'=>0));
 	}else{
@@ -269,10 +376,19 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Lunas";
-		$kui['duar']=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
-		$dompdf->setPaper('A6','landscape');
+		$dompdf->setPaper('A4','landscape');
 		$dompdf->render();
 		$dompdf->stream('my.pdf', array('Attachment'=>0));
 	}else{
@@ -286,10 +402,19 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Belum-Lunas";
-		$kui['duar']=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
-		$dompdf->setPaper('A6','landscape');
+		$dompdf->setPaper('A4','landscape');
 		$dompdf->render();
 		$dompdf->stream('my.pdf', array('Attachment'=>0));
 	}else{
@@ -302,10 +427,19 @@ class laporan extends BaseController
 		$model = new M_model();
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
-		$kui['duar']=$model->filterrr('pembayaran',$awal,$akhir);
+		$id_user = session()->get('id');
+	$level = session()->get('level');
+
+	if ($level == 3) {
+		$kui['duar'] = $model->filaa('pembayaran', $awal, $akhir, $id_user);
+	} elseif ($level == 6) {
+		$kui['duar'] = $model->filteras('pembayaran', $awal, $akhir, $id_user);
+	} else {
+		$kui['duar'] = $model->filterrr('pembayaran', $awal, $akhir);
+	}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/laporan_semua',$kui));
-		$dompdf->setPaper('A6','landscape');
+		$dompdf->setPaper('A4','landscape');
 		$dompdf->render();
 		$dompdf->stream('my.pdf', array('Attachment'=>0));
 	}else{
@@ -319,7 +453,16 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Masuk";
-		$data=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
         
 
 		$spreadsheet=new Spreadsheet();
@@ -338,7 +481,7 @@ class laporan extends BaseController
 
 		foreach($data as $data){
 			$spreadsheet->setActiveSheetIndex(0)
-			->setCellValue('A'. $column, $data->nama)
+			->setCellValue('A'. $column, $data->nama_siswa)
 			->setCellValue('B'. $column, $data->jumlah)
 			->setCellValue('C'. $column, $data->denda)
 			->setCellValue('D'. $column, $data->keterangan)
@@ -371,7 +514,17 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Keluar";
-		$data=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
+        
         
 
 		$spreadsheet=new Spreadsheet();
@@ -390,7 +543,7 @@ class laporan extends BaseController
 
 		foreach($data as $data){
 			$spreadsheet->setActiveSheetIndex(0)
-			->setCellValue('A'. $column, $data->nama)
+			->setCellValue('A'. $column, $data->nama_siswa)
 			->setCellValue('B'. $column, $data->jumlah)
 			->setCellValue('C'. $column, $data->denda)
 			->setCellValue('D'. $column, $data->keterangan)
@@ -423,7 +576,17 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Denda";
-		$data=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
+        
         
 
 		$spreadsheet=new Spreadsheet();
@@ -443,7 +606,7 @@ class laporan extends BaseController
 
 		foreach($data as $data){
 			$spreadsheet->setActiveSheetIndex(0)
-			->setCellValue('A'. $column, $data->nama)
+			->setCellValue('A'. $column, $data->nama_siswa)
 			->setCellValue('B'. $column, $data->jumlah)
 			->setCellValue('C'. $column, $data->denda)
 			->setCellValue('D'. $column, $data->keterangan)
@@ -479,7 +642,17 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Kas";
-		$data=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
+        
         
 
 		$spreadsheet=new Spreadsheet();
@@ -498,7 +671,7 @@ class laporan extends BaseController
 
 		foreach($data as $data){
 			$spreadsheet->setActiveSheetIndex(0)
-			->setCellValue('A'. $column, $data->nama)
+			->setCellValue('A'. $column, $data->nama_siswa)
 			->setCellValue('B'. $column, $data->jumlah)
 			->setCellValue('C'. $column, $data->denda)
 			->setCellValue('D'. $column, $data->keterangan)
@@ -531,7 +704,17 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Lunas";
-		$data=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
+        
         
 
 		$spreadsheet=new Spreadsheet();
@@ -550,7 +733,7 @@ class laporan extends BaseController
 
 		foreach($data as $data){
 			$spreadsheet->setActiveSheetIndex(0)
-			->setCellValue('A'. $column, $data->nama)
+			->setCellValue('A'. $column, $data->nama_siswa)
 			->setCellValue('B'. $column, $data->jumlah)
 			->setCellValue('C'. $column, $data->denda)
 			->setCellValue('D'. $column, $data->keterangan)
@@ -584,7 +767,17 @@ class laporan extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Belum-Lunas";
-		$data=$model->filter2('pembayaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pembayaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pembayaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pembayaran', $awal, $akhir, $status);
+		}
+        
         
 
 		$spreadsheet=new Spreadsheet();
@@ -603,7 +796,7 @@ class laporan extends BaseController
 
 		foreach($data as $data){
 			$spreadsheet->setActiveSheetIndex(0)
-			->setCellValue('A'. $column, $data->nama)
+			->setCellValue('A'. $column, $data->nama_siswa)
 			->setCellValue('B'. $column, $data->jumlah)
 			->setCellValue('C'. $column, $data->denda)
 			->setCellValue('D'. $column, $data->keterangan)
@@ -636,7 +829,16 @@ class laporan extends BaseController
         $model = new M_model();
         $awal = $this->request->getPost('awal');
         $akhir = $this->request->getPost('akhir');
-        $data = $model->filterrr('pembayaran', $awal, $akhir);
+        $id_user = session()->get('id');
+	$level = session()->get('level');
+
+	if ($level == 3) {
+		$data = $model->filaa('pembayaran', $awal, $akhir, $id_user);
+	} elseif ($level == 6) {
+		$data = $model->filteras('pembayaran', $awal, $akhir, $id_user);
+	} else {
+		$data = $model->filterrr('pembayaran', $awal, $akhir);
+	}
 
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();

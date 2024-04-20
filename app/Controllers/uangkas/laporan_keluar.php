@@ -99,7 +99,17 @@ class laporan_keluar extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Uang-Masuk";
-    $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+    $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -112,7 +122,17 @@ class laporan_keluar extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Uang-Keluar";
-    $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+	$id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -125,7 +145,17 @@ class laporan_keluar extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Uang-Denda";
-    $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+     $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -138,7 +168,17 @@ class laporan_keluar extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Uang-Kas";
-    $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+     $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -151,7 +191,17 @@ class laporan_keluar extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Lunas";
-    $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+    $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -164,7 +214,17 @@ class laporan_keluar extends BaseController
     $awal = $this->request->getPost('awal');
     $akhir = $this->request->getPost('akhir');
     $status = "Belum-Lunas";
-    $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+     $id_user = session()->get('id');
+    $level = session()->get('level');
+
+    if ($level == 3) {
+        $kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+    } elseif ($level == 6) {
+        $kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+    } else {
+        $kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+    }
+
     echo view('uangkas/c_msk', $kui);
 }else{
 	return redirect()->to('/Home');
@@ -177,7 +237,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Masuk";
-		$kui['duar']=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
 		$dompdf->setPaper('A6','landscape');
@@ -194,7 +263,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Keluar";
-		$kui['duar']=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
 		$dompdf->setPaper('A6','landscape');
@@ -211,7 +289,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Denda";
-		$kui['duar']=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
 		$dompdf->setPaper('A6','landscape');
@@ -228,7 +315,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Kas";
-		$kui['duar']=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
 		$dompdf->setPaper('A6','landscape');
@@ -245,7 +341,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Lunas";
-		$kui['duar']=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
 		$dompdf->setPaper('A6','landscape');
@@ -262,7 +367,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Belum-Lunas";
-		$kui['duar']=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$kui['duar'] = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$kui['duar'] = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$kui['duar'] = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
 		$dompdf = new\Dompdf\Dompdf();
 		$dompdf->loadHtml(view('uangkas/c_msk',$kui));
 		$dompdf->setPaper('A6','landscape');
@@ -279,7 +393,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Masuk";
-		$data=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
         
 
 		$spreadsheet=new Spreadsheet();
@@ -331,7 +454,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Keluar";
-		$data=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
         
 
 		$spreadsheet=new Spreadsheet();
@@ -383,7 +515,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Denda";
-		$data=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
         
 
 		$spreadsheet=new Spreadsheet();
@@ -439,7 +580,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Uang-Kas";
-		$data=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
         
 
 		$spreadsheet=new Spreadsheet();
@@ -491,7 +641,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Lunas";
-		$data=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
         
 
 		$spreadsheet=new Spreadsheet();
@@ -543,7 +702,16 @@ class laporan_keluar extends BaseController
 		$awal= $this->request->getPost('awal');
 		$akhir= $this->request->getPost('akhir');
 		$status = "Belum-Lunas";
-		$data=$model->filter2('pengeluaran',$awal,$akhir,$status);
+		$id_user = session()->get('id');
+		$level = session()->get('level');
+	
+		if ($level == 3) {
+			$data = $model->filter3('pengeluaran', $awal, $akhir, $status, $id_user);
+		} elseif ($level == 6) {
+			$data = $model->filter4('pengeluaran', $awal, $akhir, $status, $id_user);
+		} else {
+			$data = $model->filter2('pengeluaran', $awal, $akhir, $status);
+		}
         
 
 		$spreadsheet=new Spreadsheet();

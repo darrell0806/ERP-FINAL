@@ -65,3 +65,13 @@ CRITICAL - 2024-04-20 17:05:46 --> Invalid argument supplied for foreach()
 #8 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
 #10 {main}
+CRITICAL - 2024-04-20 18:19:58 --> Invalid file: laporan_semua.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan_semua.p...')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('laporan_semua', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\laporan.php(261): view('laporan_semua', Array)
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\laporan->cari_semua()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\laporan))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
