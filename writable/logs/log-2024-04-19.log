@@ -1,0 +1,114 @@
+ERROR - 2024-04-19 16:08:44 --> Unknown column 'siswa.kelas' in 'on clause'
+CRITICAL - 2024-04-19 16:08:44 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(46): App\Models\uangkas\M_model->getAllPData()
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->tambah_pembayaran()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-19 16:19:31 --> Unknown column 'siswa.kelas' in 'on clause'
+CRITICAL - 2024-04-19 16:19:31 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(46): App\Models\uangkas\M_model->getAllPData()
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->tambah_pembayaran()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-19 16:20:57 --> Unknown column 'rombel.kelas' in 'on clause'
+CRITICAL - 2024-04-19 16:20:57 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(46): App\Models\uangkas\M_model->getAllPData()
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->tambah_pembayaran()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-19 16:30:43 --> Table 'dbabsensi1.uangkas/pembayaran' doesn't exist
+ERROR - 2024-04-19 16:35:37 --> Unknown column 'rombel.guru' in 'on clause'
+CRITICAL - 2024-04-19 16:35:37 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(16): App\Models\uangkas\M_model->getPaymentDataByUserId('14')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->index()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-19 16:38:59 --> Unknown column 'guru.user' in 'where clause'
+CRITICAL - 2024-04-19 16:38:59 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(150): App\Models\uangkas\M_model->getPaymentDataByUserIdd('14')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->pengeluaran()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-19 16:43:20 --> Unknown column 'siswa.kelas' in 'on clause'
+CRITICAL - 2024-04-19 16:43:20 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(44): App\Models\uangkas\M_model->getPaymentDataByLoggedInStudentpen('16')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->tambah_pembayaran()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-19 16:47:07 --> Unknown column 'siswa.kelas' in 'on clause'
+CRITICAL - 2024-04-19 16:47:07 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(44): App\Models\uangkas\M_model->getPaymentDataByLoggedInStudentpen('16')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->tambah_pembayaran()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-19 16:48:19 --> Unknown column 'rombel.kelas' in 'on clause'
+CRITICAL - 2024-04-19 16:48:19 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(44): App\Models\uangkas\M_model->getPaymentDataByLoggedInStudentpen('16')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->tambah_pembayaran()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-19 16:50:32 --> Unknown column 'siswa.kelas' in 'on clause'
+CRITICAL - 2024-04-19 16:50:33 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(173): App\Models\uangkas\M_model->getPaymentDataByLoggedInStudentpem('16')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->tambah_pengeluaran()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+CRITICAL - 2024-04-19 17:31:16 --> Invalid file: header.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\laporan.php(29): view('header')
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\laporan->uang_masuk()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\laporan))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
+CRITICAL - 2024-04-19 17:35:50 --> Invalid file: laporan_semua.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan_semua.p...')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('laporan_semua', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\laporan.php(192): view('laporan_semua', Array)
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\laporan->cari_semua()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\laporan))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
+CRITICAL - 2024-04-19 17:41:06 --> A non-numeric value encountered
+#0 D:\ERP-PH-main\app\Views\uangkas\c_msk.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\ERP-PH-main\\...', 69, Array)
+#1 D:\ERP-PH-main\system\View\View.php(210): include('D:\\ERP-PH-main\\...')
+#2 D:\ERP-PH-main\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('uangkas/c_msk', Array, true)
+#4 D:\ERP-PH-main\app\Controllers\uangkas\laporan_keluar.php(103): view('uangkas/c_msk', Array)
+#5 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\laporan_keluar->cari_msk()
+#6 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\laporan_keluar))
+#7 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#10 {main}

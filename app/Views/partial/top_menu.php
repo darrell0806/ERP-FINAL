@@ -41,7 +41,7 @@ if (!empty($user->foto)) {
                     if ($level == 1 || $level == 2 || $level == 3) {
                     // Jika level 1, 2, atau 3, gunakan session()->get('username')
                       echo "<h6 class='mb-0 text-gray-600'>" . session()->get('username') . "</h6>";
-                    } elseif ($level == 4 || $level == 5) {
+                    } elseif ($level == 4 || $level == 5|| $level == 6) {
                     // Jika level 4 atau 5, gunakan $siswa->nama_siswa
                       echo "<h6 class='mb-0 text-gray-600'>$siswa->nama_siswa</h6>";
                     } else {
@@ -71,7 +71,7 @@ if (!empty($user->foto)) {
                   if ($level == 1 || $level == 2 || $level == 3) {
                     // Jika level 1, 2, atau 3, gunakan session()->get('username')
                     echo "Halo, " . session()->get('username') . "!";
-                  } elseif ($level == 4 || $level == 5) {
+                  } elseif ($level == 4 || $level == 5|| $level == 6) {
                     // Jika level 4 atau 5, gunakan $siswa->nama_siswa
                     echo "Halo, $siswa->nama_siswa!";
                   } else {

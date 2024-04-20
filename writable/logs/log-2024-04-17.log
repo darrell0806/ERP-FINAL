@@ -1,0 +1,87 @@
+CRITICAL - 2024-04-17 09:17:55 --> Class 'App\Controllers\uangkas\BaseController' not found
+#0 D:\ERP-PH-main\system\Router\Router.php(518): include_once()
+#1 D:\ERP-PH-main\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('uangkas')
+#2 D:\ERP-PH-main\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('uangkas')
+#3 D:\ERP-PH-main\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#7 {main}
+CRITICAL - 2024-04-17 09:18:14 --> Invalid file: header.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\Home.php(12): view('header')
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Home->index()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Home))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
+CRITICAL - 2024-04-17 09:23:03 --> Invalid file: header.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\Home.php(12): view('header')
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Home->index()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Home))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
+CRITICAL - 2024-04-17 09:23:06 --> Invalid file: header.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\Home.php(12): view('header')
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Home->index()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Home))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
+ERROR - 2024-04-17 10:03:37 --> Table 'dbabsensi1.pembayaran' doesn't exist
+CRITICAL - 2024-04-17 10:03:37 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(16): App\Models\uangkas\M_model->getPaymentDataByUserId('14')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->index()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-17 10:07:17 --> Unknown column 'siswa.kelas' in 'on clause'
+CRITICAL - 2024-04-17 10:07:17 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\User.php(181): App\Models\uangkas\M_model->getSiswaByGuruId('14')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\User->tambah_bendahara()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\User))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+CRITICAL - 2024-04-17 10:50:56 --> Invalid file: header.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(24): view('header')
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->index()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
+CRITICAL - 2024-04-17 11:00:45 --> Invalid file: header.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\laporan.php(29): view('header')
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\laporan->uang_masuk()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\laporan))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
+CRITICAL - 2024-04-17 11:00:52 --> Invalid file: transaksi/v_pengeluaran.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transaksi/v_pen...')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('transaksi/v_pen...', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(160): view('transaksi/v_pen...', Array)
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->pengeluaran()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}

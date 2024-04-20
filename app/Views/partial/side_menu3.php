@@ -53,8 +53,8 @@ $logo = $builder->select('logo_website')
           <ul class="menu">
             <li class="sidebar-title">Menu</li>
 
-            <li class="sidebar-item <?php if($uri->getSegment(1) == "dashboard"){echo "active";}?>">
-              <a href="<?=base_url('dashboard')?>" class='sidebar-link'>
+            <li class="sidebar-item <?php if($uri->getSegment(1) == "penilaian"){echo "active";}?>">
+              <a href="<?=base_url('penilaian')?>" class='sidebar-link'>
                 <i class="fa-solid fa-grid-2"></i>
                 <span>Dashboard</span>
               </a>
@@ -108,8 +108,8 @@ $logo = $builder->select('logo_website')
         <ul class="menu">
           <li class="sidebar-title">Menu</li>
 
-          <li class="sidebar-item <?php if($uri->getSegment(1) == "dashboard"){echo "active";}?>">
-            <a href="<?=base_url('dashboard')?>" class='sidebar-link'>
+          <li class="sidebar-item <?php if($uri->getSegment(1) == "penilaian"){echo "active";}?>">
+            <a href="<?=base_url('penilaian')?>" class='sidebar-link'>
               <i class="fa-solid fa-grid-2"></i>
               <span>Dashboard</span>
             </a>
@@ -160,8 +160,8 @@ $logo = $builder->select('logo_website')
         <ul class="menu">
           <li class="sidebar-title">Menu</li>
 
-          <li class="sidebar-item <?php if($uri->getSegment(1) == "dashboard"){echo "active";}?>">
-            <a href="<?=base_url('dashboard')?>" class='sidebar-link'>
+          <li class="sidebar-item <?php if($uri->getSegment(1) == "penilaian"){echo "active";}?>">
+            <a href="<?=base_url('penilaian')?>" class='sidebar-link'>
               <i class="fa-solid fa-grid-2"></i>
               <span>Dashboard</span>
             </a>

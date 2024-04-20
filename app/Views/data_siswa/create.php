@@ -53,6 +53,18 @@
 						</div>
 						<div class="col-md-6 col-12">
 							<div class="form-group">
+								<label for="city-column">Nama</label>
+								<input
+								type="text"
+								id="username"
+								class="form-control"
+								placeholder="Nama"
+								name="nama_"
+								/>
+							</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="form-group">
 								<label for="city-column">Username</label>
 								<input
 								type="text"

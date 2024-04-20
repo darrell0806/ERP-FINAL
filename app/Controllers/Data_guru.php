@@ -51,6 +51,7 @@ public function aksi_tambah_guru()
     $rombel= $this->request->getPost('rombel');
     $a= $this->request->getPost('username');
     $b= $this->request->getPost('password');
+    $c= $this->request->getPost('nama_');
     $foto = $this->request->getFile('foto');
     if ($foto->isValid() && !$foto->hasMoved()) {
         $imageName = $foto->getName();
@@ -61,6 +62,7 @@ public function aksi_tambah_guru()
 
     $data1=array(
         'username'=>$a,
+        'nama'=>$c,
         'password'=>md5($b),
         'level'=>'3',
         'foto'=>$imageName,
@@ -111,6 +113,7 @@ public function aksi_edit_guru()
 {
     $nik = $this->request->getPost('nik');
     $a = $this->request->getPost('username');
+    $c = $this->request->getPost('nama_');
     $nama = $this->request->getPost('nama');
     $rombel= $this->request->getPost('rombel');
     $id = $this->request->getPost('id');
@@ -128,6 +131,7 @@ public function aksi_edit_guru()
     $where = array('id_user' => $id);
     $data1 = array(
         'username' => $a,
+        'nama' => $c,
         'jenjang' => $jenjang
     );
 

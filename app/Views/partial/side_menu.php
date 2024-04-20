@@ -187,7 +187,7 @@ $logo = $builder->select('logo_website')
 
 <!-- Menu Siswa  -------------------------------------------------------------------------------------------->
 
-<?php } else if (session()->get('level')==4){ ?>
+<?php } else if (session()->get('level')==4 || session()->get('level')==6){ ?>
 
   <div class="sidebar-menu">
     <ul class="menu">

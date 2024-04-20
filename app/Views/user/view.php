@@ -27,7 +27,7 @@
                                     <th>No</th>
                                     <th>Foto Profil</th>
                                     <th>Username</th>       
-                                    <!-- <th>Email</th> -->
+                                    <th>Nama</th>
                                     <th>Level</th>
                                     <th>Action</th>
                                 </tr>
@@ -42,7 +42,7 @@
                                         <img src="<?php echo base_url('images/' . $riz->foto) ?>" style="width: 100%; height: 100%; object-fit: contain;" alt="Foto">
                                     </td>
                                     <td><?php echo $riz->username ?></td>
-                                    <!-- <td><?php echo $riz->email ?></td> -->
+                                    <td><?php echo $riz->nama ?></td>
                                     <td><?php echo $riz->nama_level?></td>
                                     <td>
                                         <a class="btn btn-danger" href="<?php echo base_url('user/reset_password/'. $riz->id_user) ?>"><i class="faj-button fa-solid fa-key"></i>Reset Password</a>

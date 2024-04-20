@@ -336,12 +336,14 @@ class Ruangan extends BaseController
 		$id=$this->request->getPost('id');
 		$a=$this->request->getPost('kelas');
 		$b=$this->request->getPost('jurusan');
+		$c=$this->request->getPost('nama');
 
 
 		$where=array('id_rombel'=>$id);
 		$simpan=array(
 			'kelas'=>$a,
-			'jurusan'=>$b
+			'jurusan'=>$b,
+			'nama_r'=>$c
 			
 		);
 		$model=new M_model();

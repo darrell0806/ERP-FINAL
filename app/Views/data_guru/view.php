@@ -37,21 +37,7 @@
 		<div class="card-header">
 			<a href="<?php echo base_url('data_guru/tambah_guru/')?>"><button class="btn btn-primary mt-2"><i class="fa-solid fa-plus"></i>
 			Tambah</button></a>
-			<div class="btn-group">
-				<div class="dropdown">
-					<button class="btn btn-success btn-block dropdown-toggle me-1 mt-2" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Import
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-						<a class="dropdown-item" href="<?=base_url('template/template-guru/template-guru.xlsx')?>"><i class="faj-button fa-solid fa-download"></i>Download Template
-						</a>
-						<a class="dropdown-item" data-bs-toggle="modal"
-						data-bs-target="#modal-import">
-						<i class="faj-button fa-solid fa-upload"></i>Import Data
-					</a>
-				</div>
-			</div>
-		</div>
+			
 	</div>
 
 	<!-- Modal Import -->

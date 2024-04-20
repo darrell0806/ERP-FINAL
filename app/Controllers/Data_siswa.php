@@ -59,6 +59,7 @@ public function aksi_tambah_siswa()
     $jenjang= $this->request->getPost('jenjang');
     $a= $this->request->getPost('username');
     $b= $this->request->getPost('password');
+    $c= $this->request->getPost('nama_');
     $foto = $this->request->getFile('foto');
     if ($foto->isValid() && !$foto->hasMoved()) {
         $imageName = $foto->getName();
@@ -69,6 +70,7 @@ public function aksi_tambah_siswa()
 
     $data1=array(
         'username'=>$a,
+        'nama'=>$c,
         'password'=>md5($b),
         'level'=>'4',
         'foto'=>$imageName,
@@ -119,6 +121,7 @@ public function aksi_edit_siswa()
 {
     $nis = $this->request->getPost('nis');
     $a = $this->request->getPost('username');
+    $c = $this->request->getPost('nama_');
     $nama = $this->request->getPost('nama');
     $rombel= $this->request->getPost('rombel');
     $jenjang= $this->request->getPost('jenjang');
@@ -136,6 +139,7 @@ public function aksi_edit_siswa()
     $where = array('id_user' => $id);
     $data1 = array(
         'username' => $a,
+        'nama' => $c,
         'jenjang' => $jenjang
     );
 

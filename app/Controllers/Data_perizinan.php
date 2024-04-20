@@ -17,7 +17,7 @@ class Data_perizinan extends BaseController
 
     public function index()
     {
-        if (session()->get('level') == 4 || session()->get('level') == 5) {
+        if (session()->get('level') == 4 || session()->get('level') == 5|| session()->get('level') == 6) {
             $model = new M_perizinan();
             $on='perizinan.siswa=siswa.id_siswa';
             $on2='perizinan.status=keterangan_perizinan.kode_keterangan';
@@ -49,7 +49,7 @@ class Data_perizinan extends BaseController
 
     public function create()
     {
-        if(session()->get('level')== 4 || session()->get('level') == 5) {
+        if(session()->get('level')== 4 || session()->get('level') == 5 || session()->get('level') == 6) {
             $model=new M_perizinan();
             $data['title']='Data Perizinan';  
             $data['keterangan'] = $model->tampil('keterangan_perizinan');
@@ -65,7 +65,7 @@ class Data_perizinan extends BaseController
 
     public function aksi_create()
     { 
-        if(session()->get('level')== 4 || session()->get('level') == 5) {
+        if(session()->get('level')== 4 || session()->get('level') == 5|| session()->get('level') == 6) {
             $a= $this->request->getPost('tanggal');
             $b= $this->request->getPost('status');
             $c= $this->request->getPost('alasan');
@@ -220,7 +220,7 @@ class Data_perizinan extends BaseController
 
      public function menu_print()
     {
-        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4) {
+        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4|| session()->get('level') == 6) {
             $model=new M_perizinan();
 
             $data['blok'] = $model->tampil2('blok');
@@ -246,7 +246,7 @@ class Data_perizinan extends BaseController
 
     public function export_windows()
     {
-        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4) {
+        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4 || session()->get('level') == 6) {
             $model = new M_perizinan();
 
             $blok = $this->request->getPost('blok');
@@ -268,7 +268,7 @@ class Data_perizinan extends BaseController
 
     public function export_pdf()
     {
-        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4) {
+        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4|| session()->get('level') == 6) {
             $model = new M_perizinan();
 
             $blok = $this->request->getPost('blok');
@@ -296,7 +296,7 @@ class Data_perizinan extends BaseController
 
     public function export_excel()
     {
-        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4) {
+        if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4|| session()->get('level') == 6) {
             $model = new M_perizinan();
 
             $blok = $this->request->getPost('blok');

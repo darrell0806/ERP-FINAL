@@ -1,0 +1,67 @@
+ERROR - 2024-04-20 16:29:22 --> Unknown column 'siswa.kelas' in 'on clause'
+CRITICAL - 2024-04-20 16:29:22 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\User.php(181): App\Models\uangkas\M_model->getSiswaByGuruId('8')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\User->tambah_bendahara()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\User))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-20 16:29:37 --> Unknown column 'siswa.kelas' in 'on clause'
+CRITICAL - 2024-04-20 16:29:37 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\User.php(181): App\Models\uangkas\M_model->getSiswaByGuruId('8')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\User->tambah_bendahara()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\User))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-20 16:30:26 --> Unknown column 'rombel.kelas' in 'on clause'
+CRITICAL - 2024-04-20 16:30:26 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\User.php(181): App\Models\uangkas\M_model->getSiswaByGuruId('8')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\User->tambah_bendahara()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\User))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+CRITICAL - 2024-04-20 16:30:40 --> Invalid file: header.php
+#0 D:\ERP-PH-main\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 D:\ERP-PH-main\app\Controllers\uangkas\User.php(185): view('header')
+#3 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\User->tambah_bendahara()
+#4 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\User))
+#5 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#8 {main}
+ERROR - 2024-04-20 16:33:44 --> Unknown column 'rombel.guru' in 'on clause'
+CRITICAL - 2024-04-20 16:33:44 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\User.php(181): App\Models\uangkas\M_model->getSiswaByGuruId('14')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\User->tambah_bendahara()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\User))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+ERROR - 2024-04-20 16:35:10 --> Unknown column 'guru.id_user' in 'where clause'
+CRITICAL - 2024-04-20 16:35:10 --> Call to a member function getResult() on bool
+#0 D:\ERP-PH-main\app\Controllers\uangkas\User.php(181): App\Models\uangkas\M_model->getSiswaByGuruId('14')
+#1 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\User->tambah_bendahara()
+#2 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\User))
+#3 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#6 {main}
+CRITICAL - 2024-04-20 17:05:46 --> Invalid argument supplied for foreach()
+#0 D:\ERP-PH-main\app\Views\uangkas\transaksi\edit_pembayaran.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'D:\\ERP-PH-main\\...', 33, Array)
+#1 D:\ERP-PH-main\system\View\View.php(210): include('D:\\ERP-PH-main\\...')
+#2 D:\ERP-PH-main\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\ERP-PH-main\system\Common.php(1089): CodeIgniter\View\View->render('uangkas/transak...', Array, true)
+#4 D:\ERP-PH-main\app\Controllers\uangkas\Transaksi.php(100): view('uangkas/transak...', Array)
+#5 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\uangkas\Transaksi->edit_pembayaran('8')
+#6 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\uangkas\Transaksi))
+#7 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#10 {main}

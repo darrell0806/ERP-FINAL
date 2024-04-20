@@ -17,9 +17,9 @@ class Dashboard extends BaseController
            $data['title']='Dashboard';
 
            echo view('partial_dashboard/header_dashboard', $data);
-          
-           echo view('partial/top_menu');
            echo view('partial/side_menu');
+           echo view('partial/top_menu');
+          
            echo view('login/dashboard', $data);
            echo view('partial_dashboard/footer_dashboard');
 

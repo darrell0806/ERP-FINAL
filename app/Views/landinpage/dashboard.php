@@ -203,7 +203,7 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary"
                                 data-bs-dismiss="modal">Cancel</button>
-                                <a href="/uang"><button type="button" class="btn btn-success"
+                                <a href="/uangkas"><button type="button" class="btn btn-success"
                                     data-bs-dismiss="modal">Membuka APP</button></a>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary"
                             data-bs-dismiss="modal">Cancel</button>
-                            <a href="/uangkas"><button type="button" class="btn btn-success"
+                            <a href="/uangkaskas"><button type="button" class="btn btn-success"
                                 data-bs-dismiss="modal">Membuka APP</button></a>
                             </div>
                         </div>
@@ -468,7 +468,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
     AOS.init();
 </script>
 <!-- End Col -->
-<?php }else if (session()->get('level')==4 || session()->get('level')==5 ){ ?>
+<?php }else if (session()->get('level')==4 || session()->get('level')==5 || session()->get('level')==6 ){ ?>
     <body id="top">
 
 <main>
@@ -642,7 +642,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary"
                         data-bs-dismiss="modal">Cancel</button>
-                        <a href="/uang"><button type="button" class="btn btn-success"
+                        <a href="/uangkas"><button type="button" class="btn btn-success"
                             data-bs-dismiss="modal">Membuka APP</button></a>
                         </div>
                     </div>
@@ -681,7 +681,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
                     data-bs-dismiss="modal">Cancel</button>
-                    <a href="/uangkas"><button type="button" class="btn btn-success"
+                    <a href="/uangkaskas"><button type="button" class="btn btn-success"
                         data-bs-dismiss="modal">Membuka APP</button></a>
                     </div>
                 </div>
@@ -1006,7 +1006,7 @@ AOS.init();
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary"
                         data-bs-dismiss="modal">Cancel</button>
-                        <a href="/uang"><button type="button" class="btn btn-success"
+                        <a href="/uangkas"><button type="button" class="btn btn-success"
                             data-bs-dismiss="modal">Membuka APP</button></a>
                         </div>
                     </div>
@@ -1050,7 +1050,7 @@ AOS.init();
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary"
                     data-bs-dismiss="modal">Cancel</button>
-                    <a href="/uangkas"><button type="button" class="btn btn-success"
+                    <a href="/uangkaskas"><button type="button" class="btn btn-success"
                         data-bs-dismiss="modal">Membuka APP</button></a>
                     </div>
                 </div>

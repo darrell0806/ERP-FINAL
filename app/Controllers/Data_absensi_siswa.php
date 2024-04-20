@@ -9,7 +9,7 @@ class Data_absensi_siswa extends BaseController
 
     public function index()
     {
-        if (session()->get('level') == 4 || session()->get('level') == 5) {
+        if (session()->get('level') == 4 || session()->get('level') == 5|| session()->get('level') == 6) {
             $model = new M_model();
             $model2 = new M_perizinan();
 
@@ -40,7 +40,7 @@ class Data_absensi_siswa extends BaseController
 
     public function menu()
     {
-        if (session()->get('level') == 4 || session()->get('level') == 5) {
+        if (session()->get('level') == 4 || session()->get('level') == 5|| session()->get('level') == 6) {
             $model=new M_perizinan();
 
             $data['blok'] = $model->tampil2('blok');
