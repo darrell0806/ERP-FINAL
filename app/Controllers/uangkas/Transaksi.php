@@ -300,7 +300,7 @@ class Transaksi extends BaseController
     
         $model = new M_model();
     
-        if ($userLevel == 4) {
+        if ($userLevel == 4  || $userLevel == 5) {
             // Ambil id_siswa berdasarkan user_id yang ada di tabel siswa
             $siswa = $model->db->table('siswa')
                               ->where('user', $userId)
@@ -328,7 +328,7 @@ class Transaksi extends BaseController
     
         $model = new M_model();
     
-        if ($userLevel == 4) {
+        if ($userLevel == 4  || $userLevel == 5) {
             // Ambil id_siswa berdasarkan user_id yang ada di tabel siswa
             $siswa = $model->db->table('siswa')
                               ->where('user', $userId)
@@ -356,7 +356,7 @@ class Transaksi extends BaseController
     
         $model = new M_model();
     
-        if ($userLevel == 4) {
+        if ($userLevel == 4  || $userLevel == 5) {
             // Ambil id_siswa berdasarkan user_id yang ada di tabel siswa
             $siswa = $model->db->table('siswa')
                               ->where('user', $userId)
@@ -384,7 +384,7 @@ class Transaksi extends BaseController
     
         $model = new M_model();
     
-        if ($userLevel == 4) {
+        if ($userLevel == 4  || $userLevel == 5) {
             // Ambil id_siswa berdasarkan user_id yang ada di tabel siswa
             $siswa = $model->db->table('siswa')
                               ->where('user', $userId)

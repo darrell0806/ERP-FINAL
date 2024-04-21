@@ -1,0 +1,7 @@
+CRITICAL - 2024-04-21 22:05:07 --> Class 'App\Models\universal\M_pendaftaran' not found
+#0 D:\ERP-PH-main\system\CodeIgniter.php(832): App\Controllers\Data_pendaftaran->index()
+#1 D:\ERP-PH-main\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_pendaftaran))
+#2 D:\ERP-PH-main\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\ERP-PH-main\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\ERP-PH-main\system\Commands\Server\rewrite.php(43): require_once('D:\\ERP-PH-main\\...')
+#5 {main}

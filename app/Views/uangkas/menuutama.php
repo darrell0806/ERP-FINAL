@@ -855,7 +855,7 @@
         </div>
       </div>
       <?php
-        }else if(session()->get('level')== 4){
+        }else if(session()->get('level')== 4||session()->get('level')== 5){
           ?>
          <div class="sidebar-toggler x">
                 <a href="#" class="sidebar-hide d-xl-none d-block"
