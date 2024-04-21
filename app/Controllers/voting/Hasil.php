@@ -25,7 +25,7 @@ class Hasil extends BaseController
             $status2_selesai = $model1->getStatus2Selesai();
             
             // Anda juga perlu memeriksa apakah status2_selesai adalah 'Tampil' untuk menentukan apakah hasil_vote harus ditampilkan
-            if ($status2_selesai == 'Tampil' && ($level == 3 || $level == 4|| $level == 5)) {
+            if ($status2_selesai == 'Tampil' && ($level == 3 || $level == 4|| $level == 5|| $level == 6)) {
                 echo view('voting/diagram', $data);
             } else {
                 if ($level == 1 || $level == 2) {
@@ -120,7 +120,7 @@ class Hasil extends BaseController
            
             if (session()->get('id') > 0) {
                 $level = session()->get('level');
-                if ($status == 'Tidak-Aktif' && ($level == 3 || $level == 4)) {
+                if ($status == 'Tidak-Aktif' && ($level == 3 || $level == 4|| $level == 5|| $level == 6)) {
                     echo view('voting/header');
                     echo view('voting/menuutama');
                     echo view('voting/diagram');

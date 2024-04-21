@@ -39,7 +39,7 @@
 			Tambah</button></a>
 			<a href="<?php echo base_url('user/naik/')?>"><button class="btn btn-secondary mt-2" style="color: #ffffff;"><i class="fa-solid fa-plus"></i>
 			Naik Kelas</button></a>
-			<div class="btn-group">
+			<!-- <div class="btn-group">
 				<div class="dropdown">
 					<button class="btn btn-success btn-block dropdown-toggle me-1 mt-2" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Import
@@ -53,12 +53,12 @@
 					</a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 	<!-- Modal Import -->
 
-	<div class="modal fade text-left" id="modal-import" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+	<!-- <div class="modal fade text-left" id="modal-import" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-scrollable" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -91,7 +91,7 @@
 
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- =================================================================================== -->
 

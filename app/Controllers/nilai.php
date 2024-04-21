@@ -85,7 +85,7 @@ class nilai extends BaseController
         // Misalnya, lakukan perulangan untuk menyimpan setiap entri nilai
         for ($i = 0; $i < count($id_siswa); $i++) {
             // Memuat model
-            $modelNilai = new \App\Models\ModelNilai();
+           
 
             // Lakukan operasi penyimpanan ke database di sini
             $data = [

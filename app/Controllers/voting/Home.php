@@ -25,7 +25,7 @@ class Home extends BaseController
 	{
 		$userLevel = session()->get('level');
 		
-		if ($userLevel == 3 || $userLevel == 4|| $userLevel == 5) {
+		if ($userLevel == 3 || $userLevel == 4|| $userLevel == 5|| $userLevel == 6) {
 			echo view('voting/header');
 			echo view('voting/Dashboard2');
 			echo view('voting/menuutama');

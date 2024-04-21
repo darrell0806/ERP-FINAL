@@ -104,7 +104,7 @@ class Ruangan extends BaseController
 	{
 		if(session()->get('level')==1 ||  session()->get('level')==2){
 			$model=new M_model();
-			echo view('partial/header_datatable', $data);
+			echo view('partial/header_datatable');
 			echo view('partial/side_menu2');
 			echo view('partial/top_menu');
 			echo view('ruangan/tambah_jurusan');
@@ -184,7 +184,7 @@ class Ruangan extends BaseController
 		if(session()->get('level')==1 ||  session()->get('level')==2){
 			$model=new M_model();
 			$where=array('id_kelas'=>$id);
-			echo view('partial/header_datatable', $data);
+			echo view('partial/header_datatable');
 			echo view('partial/side_menu2');
 			echo view('partial/top_menu');
 			$data['jojo']=$model->getWhere('kelas',$where);

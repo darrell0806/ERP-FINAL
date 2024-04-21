@@ -222,21 +222,7 @@ $logo = $builder->select('logo_website')
               </a>
             </li>
 
-            <li class="sidebar-title">Operasional Website</li>
-
-            <li class="sidebar-item <?php if($uri->getSegment(1) == "data_level"){echo "active";}?>">
-              <a href="<?=base_url('data_level')?>" class='sidebar-link'>
-                <i class="fa-solid fa-database"></i>
-                <span>Data Level</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item <?php if($uri->getSegment(1) == "data_website"){echo "active";}?>">
-              <a href="<?=base_url('data_website')?>" class='sidebar-link'>
-                <i class="fa-regular fa-globe"></i>
-                <span>Data Website</span>
-              </a>
-            </li>
+          
 
             <li class="sidebar-title">Data Sekolah</li>
 

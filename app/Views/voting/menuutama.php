@@ -190,7 +190,7 @@
 </div>
         </div>
         <?php
-        }else if(session()->get('level')== 3 ||  session()->get('level')==4||  session()->get('level')==5){
+        }else if(session()->get('level')== 3 ||  session()->get('level')==4||  session()->get('level')==5||  session()->get('level')==6){
           ?>
           <!DOCTYPE html>
 <html lang="en">

@@ -543,7 +543,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0" id="webDesignCard"
                                     data-bs-toggle="modal" data-bs-target="#project-01">
                                     <div class="custom-block bg-white shadow-lg" data-aos="fade-up">
-                                        <img src="images/topics/undraw_Remote_design_team_re_urdx.jpg"
+                                        <img src="images/topics/undraw_Redesign_feedback_re_jvm0.jpg"
                                         class="custom-block-image img-fluid" alt="">
                                         <br>
                                         <div class="d-flex">
